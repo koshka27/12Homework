@@ -30,7 +30,7 @@ def upload():
         logging.error("Ошибка при загрузке файла")
         return "<h1> Файл не найден </h1>"
     else:
-        return render_template("post_uploaded.html", pic=f"/uploads/images/{filename}", content=content)
+        return render_template("/post_uploaded/.html", pic=f"/uploads/images/{filename}", content=content)
 
 
     # posts = [x for x in load_posts() if search_by.lower() in x["content"].lower()]
